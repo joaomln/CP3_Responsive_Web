@@ -1,0 +1,92 @@
+/* 
+ #3d9db3 - Verde
+ #333 - Cinza
+ #f7f7f7 - Cinza
+ #cbd518 - Amarelo
+  #fff - Branco
+*/
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+li:hover
+{
+    
+   
+   
+    box-shadow:
+    2px 2px #333,
+    2px 2px #333,
+    3px 3px #333;
+    background-color: #fff;
+    border-radius: 3.5px;
+    -webkit-transform: translateX(-2px);
+transform: translateX(-2px);
+}
+
+
+.menu { 
+    height: 8vh;
+    background-color: #3d9db3;
+    display: flex;
+	align-items:center;
+	justify-content: center;
+    position: relative;
+    border-bottom: 2px;
+    border-style:solid;
+    border-color: #333;
+}
+#menuNav  { 
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+li{
+    padding: 10px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+}
+a:hover{
+  color: #3d9db3; 
+}
+#hr {
+    width: 100%;
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+form{
+padding-top: 9vh;
+}
+
+legend { 
+    text-align: center;
+}
+#lg2{
+border-radius: 0;
+}
+
+#login-area {
+    background: #f7f7f7;
+    border-radius: 15px;
+    width: 20vw;
+    height: 44vh;
+    padding: 6%;
+}

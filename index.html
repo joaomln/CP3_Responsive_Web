@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <title>Index</title>
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+    <div id="Container">
+        <header>
+            <nav class="menu">
+                <ul id="menuNav">
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="novocadastrologin.html">Cadastro</a></li>
+                    <li><a href="portal.html">Portal</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
+                </ul>              
+            </nav>
+
+        </header>
+        <main>
+            <form action="https://youtu.be/dQw4w9WgXcQ", method="GET">
+                <div id="login-area" class="shadow p-3 mb-5">
+                        <legend id="lg1"></legend>
+                        <legend id="lg2">Login</legend>
+                        <hr id="hr">
+                    <div class="mb-3">
+                        <label for="idTxtEmail" class="form-label">Seu Email</label><br>
+                        <input type="text" name="txtEmail" class="form-control" id="idTxtEmail" placeholder="contato@htmlcsspro.com"                        
+                        pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="idTxtPassword", class="form-label">Sua Senha</label><br>
+                        <input type="password", name="txtPassword", class="form-control" id="idTxtPassword" placeholder="1234"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">                      
+                    </div>
+                    <div>
+                        <label for="idChkLogin">Manter-me logado</div><label>
+                        <input type="checkbox" name="chkLogin" id="idChkLogin">
+                        <div id="idBtnLogin"><button class="btn btn-primary btn-lg btn-block" type="submit">Logar</button></div>
+                    </div><br>
+                    <div class="cad-area">
+                        Ainda não tem conta?                            
+                        <button id="idBtnCad" class="btn btn-primary btn-lg btn-block" type="submit" onclick="uvaPassa()">Cadastre-se</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

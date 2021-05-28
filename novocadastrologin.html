@@ -22,6 +22,31 @@
             </nav>
 
         </header>
+        <main>
+            <form action="index.html", method="GET">
+                <div id="login-area" class="shadow p-3 mb-5">
+                        <legend id="lg1"></legend>
+                        <legend id="lg2">Cadastro</legend>
+                        <hr id="hr">
+                    <div class="mb-3">
+                        <label for="idTxtUser" class="form-label">Nome de Usuário</label><br>
+                        <input type="text" name="txtUser" class="form-control" id="idTxtUser" placeholder="Usuário"                        
+                        pattern="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$">
+                    </div>
+                    <div class="mb-3">  
+                        <label for="idTxtPassword", class="form-label">Sua Senha</label><br>
+                        <input type="password", name="txtPassword", class="form-control" id="idTxtPassword" placeholder="1234"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">                      
+                    </div>
+                    <div id="idBtnCdt"><button class="btn btn-primary btn-lg btn-block" type="submit">Cadastre-se</button></div>
+                    <div class="cad-area">
+                        Já tem conta?                            
+                        <button id="idBtnLog" class="btn btn-primary btn-lg btn-block" type="submit">Ir para Login</button>
+                    </div>
+                </div>
+            </form>
+        </main>
     </div>
+    <script src="./js/form.js"></script>
 </body>
 </html>

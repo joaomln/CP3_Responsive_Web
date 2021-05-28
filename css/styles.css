@@ -90,3 +90,23 @@ border-radius: 0;
     height: 44vh;
     padding: 6%;
 }
+
+.cartao {
+    box-shadow: 0 4px 8px #3d9db3;
+    transition: 0.3s;
+    width: 20%;
+    
+    
+  }
+  
+  .cartao:hover {
+    box-shadow: 0 8px 16px 0 #3d9db3;
+  }
+  
+  .container1 {
+    padding: 2px 16px;
+  }
+
+  img{
+      width: 100%;
+  }

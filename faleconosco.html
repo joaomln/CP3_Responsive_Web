@@ -20,8 +20,47 @@
                     <li><a href="faleconosco.html">Fale Conosco</a></li>
                 </ul>              
             </nav>
-
         </header>
+
+        <main>
+            <form action="faleconosco.html", method="POST">
+                
+                <div id="login-area" class="shadow p-3 mb-5">
+                        <legend id="lg1"></legend>
+                        <legend id="lg2">Fale Conosco</legend>
+                        <hr id="hr">
+
+                    <div class="mb-3">
+                        <label for="idTxtAssunto" class="form-label">Assunto</label><br>
+                        <input type="text" name="txtAssunto" class="form-control" id="idTxtAssunto" placeholder="Assunto">                   
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idTxtUser" class="form-label">Nome de Usuário</label><br>
+                        <input type="text" name="txtUser" class="form-control" id="idTxtUser" placeholder="Usuário"                        
+                        pattern="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$">
+                    </div>
+
+                    <div class="mb-3">  
+                        <label for="idTxtPassword", class="form-label">Sua Senha</label><br>
+                        <input type="password", name="txtPassword", class="form-control" id="idTxtPassword" placeholder="1234">                                             
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description">Comentário:</label><br>
+                        <textarea name="description" id="" cols="40" rows="5"></textarea>
+                    </div>
+
+                    <div id="id-btn-login" class="d-grid gap-2 mb-4">
+                        <button class="btn custom-form-color" type="button">Enviar</button>
+                    </div>
+
+                    <div id="bottom-simple-form-area" class="card-footer d-flex justify-content-end">
+                        <span>Ainda não tem conta? <button id="id-btn-cadastro" class="btn btn-sm" type="button">Cadastre-se</button></span>
+                    </div>
+                </div>
+            </form>
+        </main>
     </div>
+    <script src="./js/form.js"></script>
 </body>
-</html>

@@ -23,30 +23,35 @@
 
         </header>
         <main>
-            <form action="portal.html", method="GET">
-                <div id="login-area" class="shadow p-3 mb-5">
-                        <legend id="lg1"></legend>
+            <form id="index-form" action="" method="POST">
+                <span id="mensagem-erro"></span>
+                <div id="simple-form-area" class="card shadow mb-5">
+                    <div class="minha-classe card-body">
                         <legend id="lg2">Login</legend>
                         <hr id="hr">
                     <div class="mb-3">
-                        <label for="idTxtUser" class="form-label">Nome de Usuário</label><br>
-                        <input type="text" name="txtUser" class="form-control" id="idTxtUser" placeholder="Usuário"                        
+                        <label for="usernameField" class="form-label">Nome de Usuário</label>
+                        <input type="text" name="txtUser" class="form-control" id="usernameField" placeholder="Usuário"                        
                         pattern="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$">
                     </div>
-                    <div class="mb-3">  
-                        <label for="idTxtPassword", class="form-label">Sua Senha</label><br>
-                        <input type="password", name="txtPassword", class="form-control" id="idTxtPassword" placeholder="1234"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">                      
+                    
+                    <div class="mb-3">
+                        <label for="passwordField", class="form-label">Sua Senha</label>
+                        <input type="password", name="txtPassword", class="form-control" id="passwordField" placeholder="1234">                        
                     </div>
-                    <div>
-                        <label for="idChkLogin">Manter-me logado</div><label>
-                        <input type="checkbox" name="chkLogin" id="idChkLogin">
-                        <div id="idBtnLogin"><button class="btn btn-primary btn-lg btn-block" type="submit">Logar</button></div>
-                    </div><br>
-                    <div class="cad-area">
-                        Ainda não tem conta?                            
-                        <button id="idBtnCad" class="btn btn-primary btn-lg btn-block" type="submit">Cadastre-se</button>
+
+                    <div class="mb-3 form-check">
+                        <label for="id-checkbox-input" class="form-check-label">Manter-me conectado</label>
+                        <input type="checkbox" id="id-checkbox-input" class="form-check-input">
                     </div>
+
+                    <div id="id-btn-login" class="d-grid gap-2 mb-4">
+                        <button class="btn custom-form-color" type="button">Logar</button>
+                    </div>
+                </div>
+
+                <div id="bottom-simple-form-area" class="card-footer d-flex justify-content-end">
+                    <span>Ainda não tem conta?<button id="id-btn-cadastro" class="btn btn-sm" type="button">Cadastre-se</button></span>
                 </div>
             </form>
         </main>

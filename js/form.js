@@ -38,7 +38,7 @@ function validaUsuario(){
 
     users.forEach(function(user) {
         (user.nome == currentUser.username && user.senha == currentUser.password)? validUserRedirect() : false;
-        var mensagemErro = formIndex.querySelector("#mensagem-erro").textContent = "Invá";
+        var mensagemErro = formIndex.querySelector("#mensagem-erro").textContent = "username ou senha inválidos!";
     });
 }
 

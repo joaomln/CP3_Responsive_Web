@@ -138,6 +138,11 @@ img{
     font-style: oblique;
 }
 
+textarea {
+    outline: none;
+    width: 100%;
+    height: 17vh;
+}
 @media only screen and (max-width: 769px){ 
 
 html, body { 

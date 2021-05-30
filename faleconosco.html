@@ -24,12 +24,10 @@
 
         <main>
             <form action="faleconosco.html", method="POST">
-                
-                <div id="login-area" class="shadow p-3 mb-5">
-                        <legend id="lg1"></legend>
+                <div id="simple-form-area" class="card shadow mb-5">
+                    <div id="login-area" class="shadow p-3">
                         <legend id="lg2">Fale Conosco</legend>
                         <hr id="hr">
-
                     <div class="mb-3">
                         <label for="idTxtAssunto" class="form-label">Assunto</label><br>
                         <input type="text" name="txtAssunto" class="form-control" id="idTxtAssunto" placeholder="Assunto">                   
@@ -48,15 +46,15 @@
 
                     <div class="mb-3">
                         <label for="description">Comentário:</label><br>
-                        <textarea name="description" id="" cols="40" rows="5"></textarea>
+                        <textarea name="description" id="" ></textarea>
                     </div>
 
                     <div id="id-btn-login" class="d-grid gap-2 mb-4">
                         <button class="btn custom-form-color" type="button">Enviar</button>
                     </div>
-
+                </div>
                     <div id="bottom-simple-form-area" class="card-footer d-flex justify-content-end">
-                        <span>Ainda não tem conta? <button id="id-btn-cadastro" class="btn btn-sm" type="button">Cadastre-se</button></span>
+                        <span>Ainda não tem conta? <a href="novocadastrologin.html"><button id="id-btn-cadastro" class="btn btn-sm" type="button">Cadastre-se</button></a></span>
                     </div>
                 </div>
             </form>
